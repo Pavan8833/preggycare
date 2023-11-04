@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+        android:layout_margin="5dp"
+        android:id="@+id/relativelay"
+        android:background="@color/babypink">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/babypink">
+
+            <EditText
+                android:id="@+id/texttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/babypink"
+                android:gravity="left"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:hint="Title :"
+                android:textColorHint="@color/textcolor"
+                android:textColor="@color/textcolor"
+                android:textSize="20sp"
+                android:textStyle="bold|normal"
+                android:inputType="text" />
+
+
+            <EditText
+                android:id="@+id/textnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/babypink"
+                android:gravity="left"
+                android:lines="5"
+                android:padding="5dp"
+                android:hint="Notes:"
+                android:textColorHint="@color/textcolor"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold|normal"
+                android:layout_below="@+id/texttitle"
+            />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

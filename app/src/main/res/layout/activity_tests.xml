@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tests"
+    android:background="@color/babypink">
+
+    <RelativeLayout
+        android:id="@+id/relativelay"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/radiusbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="TESTS"
+            android:textColor="@color/textcolor"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="649dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativelay"
+        tools:listitem="@layout/testitem"
+        android:id="@+id/testrecycler"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="5dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/pluss"
+        android:elevation="10dp"
+        android:background="@color/textcolor"
+        android:id="@+id/tflb"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

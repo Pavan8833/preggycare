@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="15dp"
+    android:background="@color/textcolor">
+
+
+        <LinearLayout
+            android:id="@+id/medlay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/pink"
+            android:elevation="10dp">
+
+
+            <EditText
+                android:id="@+id/mednote"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/babypink"
+                android:hint="meds list"
+                android:maxLines="10"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcolor"
+                android:textStyle="bold|normal" />
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

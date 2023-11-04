@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/babypink"
+    tools:context=".usernoteitem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/babypink">
+
+        <EditText
+            android:id="@+id/texttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/babypink"
+            android:gravity="left"
+            android:minHeight="48dp"
+            android:padding="5dp"
+            android:maxLines="3"
+            android:hint="Title :"
+            android:textColorHint="@color/textcolor"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"
+            android:textStyle="bold|normal"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/textnote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/babypink"
+            android:gravity="left"
+            android:lines="28"
+            android:padding="5dp"
+            android:hint="Notes:"
+            android:textColorHint="@color/textcolor"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold|normal"
+            android:layout_below="@+id/texttitle"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:layout_margin="20dp"
+            android:background="@drawable/submitbtn"
+            android:textSize="25sp"
+            android:id="@+id/backbtn"
+            />
+
+        <Button
+            android:id="@+id/donebtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/submitbtn"
+            android:text="done"
+            android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

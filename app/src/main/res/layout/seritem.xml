@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/serlay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/pink"
+        android:elevation="10dp">
+
+
+        <EditText
+            android:id="@+id/sernote"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/babypink"
+            android:hint="ser list"
+            android:maxLines="10"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:textStyle="bold|normal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".member.memprofile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="795dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/membottomnavigationview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+
+        <ImageView
+            android:id="@+id/memimage"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.147"
+            app:srcCompat="@drawable/curvedesign" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="123dp"
+            android:layout_height="115dp"
+            android:layout_marginEnd="128dp"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/memimage"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/memimage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.809"
+            app:srcCompat="@drawable/gallery" />
+
+        <ImageView
+            android:id="@+id/memedit"
+            android:layout_width="45dp"
+            android:layout_height="46dp"
+            android:contentDescription="Edit Icon"
+            android:src="@drawable/editnote"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.754"
+            app:layout_constraintStart_toEndOf="@+id/profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.224" />
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="88dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="172dp"
+            android:text="@string/profile"
+            android:textColor="@color/textcolor"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/memimage"
+            app:layout_constraintStart_toStartOf="@+id/memimage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.315" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/babypink"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/constraint">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/hospitalinfo"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/hospitalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/signupcurve"
+            android:drawableStart="@drawable/personpic"
+            android:drawablePadding="4dp"
+            android:hint="@string/hospitalid"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/memhospitalname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/signupcurve"
+            android:drawableStart="@drawable/personpic"
+            android:drawablePadding="4dp"
+            android:hint="@string/enter_Hospital_name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            tools:ignore="RtlSymmetry" />
+
+
+        <EditText
+            android:id="@+id/memhospitaladdress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/signupcurve"
+            android:drawableStart="@drawable/home"
+            android:drawablePadding="4dp"
+            android:hint="@string/hospitaladdress"
+            android:inputType="textPersonName"
+            android:lines="2"
+            android:paddingStart="10dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            tools:ignore="RtlSymmetry" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/personal_info"
+        android:textColor="@color/textcolor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/memname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/signupcurve"
+        android:drawableStart="@drawable/personpic"
+        android:drawablePadding="4dp"
+        android:hint="@string/enter_full_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcolor"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/memage"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/signupcurve"
+        android:drawableStart="@drawable/age"
+        android:drawablePadding="4dp"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcolor" />
+
+    <EditText
+        android:id="@+id/memnumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/signupcurve"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="4dp"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcolor"
+        tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/memextranumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/signupcurve"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="4dp"
+            android:hint="@string/extramobile_number"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/memaddress"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/signupcurve"
+        android:drawableStart="@drawable/home"
+        android:drawablePadding="4dp"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        android:lines="2"
+        android:paddingStart="10dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcolor"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/memaadhar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/signupcurve"
+        android:drawablePadding="4dp"
+        android:hint="@string/aadharnumber"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcolor"
+        tools:ignore="RtlSymmetry" />
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/memupdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiusbtn"
+            android:text="update"
+            android:textAllCaps="true"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/membottomnavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bottom_background"
+        android:visibility="visible"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/membottommenu" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".serviceitem"
+            android:exported="false" />
+        <activity
+            android:name=".doclist"
+            android:exported="false" />
+        <activity
+            android:name=".usernoteitem"
+            android:exported="false" />
+        <activity
+            android:name=".usermeditem"
+            android:exported="false" />
+        <activity
+            android:name=".usertestitem"
+            android:exported="false" />
+        <activity
+            android:name=".member.mempatients"
+            android:exported="false" />
+        <activity
+            android:name=".member.memdoctors"
+            android:exported="false" />
+        <activity
+            android:name=".member.memservices"
+            android:exported="false" />
+        <activity
+            android:name=".member.memhome"
+            android:exported="false" />
+        <activity
+            android:name=".member.memprofile"
+            android:exported="false" />
+        <activity
+            android:name=".member.memlogin"
+            android:exported="false" />
+        <activity
+            android:name=".member.memsignup"
+            android:exported="false" />
+        <activity
+            android:name=".month9"
+            android:exported="false" />
+        <activity
+            android:name=".month8"
+            android:exported="false" />
+        <activity
+            android:name=".month7"
+            android:exported="false" />
+        <activity
+            android:name=".month6"
+            android:exported="false" />
+        <activity
+            android:name=".month5"
+            android:exported="false" />
+        <activity
+            android:name=".month4"
+            android:exported="false" />
+        <activity
+            android:name=".month3"
+            android:exported="false" />
+        <activity
+            android:name=".month2"
+            android:exported="false" />
+        <activity
+            android:name=".month1"
+            android:exported="false" />
+        <activity
+            android:name=".medicines"
+            android:exported="false" />
+        <activity
+            android:name=".uploadphoto"
+            android:exported="false" />
+        <activity
+            android:name=".Notes"
+            android:exported="false" />
+        <activity
+            android:name=".tests"
+            android:exported="false" />
+        <activity
+            android:name=".cal"
+            android:exported="false" />
+        <activity
+            android:name=".faq"
+            android:exported="false" />
+        <activity
+            android:name=".explore"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".patientprofile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
